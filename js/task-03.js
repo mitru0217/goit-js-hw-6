@@ -15,13 +15,7 @@ const images = [
 
 const imagesContainer = document.querySelector(".gallery");
 
-const creatNewList = (images) => `<li> <img src = ${images.url} alt = ${images.alt} width = 250 height = 150></li>`;
+const creatNewList = (image) => `<li> <img src = ${image.url} alt = ${image.alt} width = 250 height = 150></li>`;
 
 
 imagesContainer.insertAdjacentHTML("afterbegin", images.map(creatNewList).join(""));
-
-
-console.log(imagesContainer);
-
-
-

@@ -10,24 +10,6 @@ const span = widget.querySelector(".color");
 
 btn.addEventListener('click', () => {
   document.body.style.backgroundColor = getRandomHexColor();
-  widget.textContent = `Background color: ${getRandomHexColor()}`;
-}
-);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  widget.textContent = `Background color: ${document.body.style.backgroundColor}` ;
+});

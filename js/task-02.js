@@ -18,5 +18,3 @@ itemEl.classList.add('item');
 })
 
 itemContainer.append(...elements);
-
-console.log(itemContainer);
